@@ -1,0 +1,46 @@
+@use "global" as *;
+
+.c-card {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  @include mq(md) {
+  }
+}
+
+.c-card__img img {
+  width: 100%;
+  @include mq(md) {}
+}
+
+.c-card__wrapper {
+  padding: myrem(28.1) myrem(20) myrem(29.4);
+  @include mq(md) {
+  }
+}
+
+.c-card__title {
+  font-size: myrem(24);
+  font-weight: bold;
+  line-height: calc(36 / 24);
+  margin-bottom: myrem(32.5);
+  @include mq(md) {
+  }
+}
+
+.c-card__text {
+  font-size: myrem(18);
+  line-height: calc(30 / 18);
+  @include mq(md) {
+  }
+}
+
+.c-card--02 .c-card__wrapper {
+  @include mq(md) {
+  padding: myrem(28.1) myrem(20) myrem(28.6);
+  }
+}
+
+.c-card--02 .c-card__title {
+  @include mq(md) {
+  margin-bottom: myrem(33.3);
+  }
+}
