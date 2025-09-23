@@ -1,0 +1,30 @@
+@use "global" as *;
+
+.c-title {
+  font-size: myrem(36);
+  font-weight: bold;
+  color: $orange;
+  line-height: calc(43.2 / 36);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include mq(md) {
+    font-size: myrem(48);
+    line-height: calc(57.6 / 48);
+    align-items: flex-end;
+  }
+}
+
+.c-title::after {
+  content: attr(data-sub);
+  font-family: $font-sub;
+  font-size: myrem(14);
+  font-weight: normal;
+  letter-spacing: 0.03em;
+  color: $black;
+  line-height: calc(14 / 14);
+  @include mq(md) {
+    font-size: myrem(20);
+    line-height: calc(20 / 20);
+  }
+}
