@@ -1,6 +1,6 @@
 
 jQuery(function ($) {
-  
+
   // ページトップボタン
   var topBtn = $('.js-pagetop');
   topBtn.hide();
@@ -35,4 +35,11 @@ jQuery(function ($) {
     return false;
   });
 
+  // ハンバーガーメニュー
+  $('.js-hamburger').on('click', function (e) {
+    e.stopPropagation();
+    $(this).toggleClass('is-active');
+    $("body").toggleClass("active");
+    $('.js-drawer').fadeToggle();
+  });
 });

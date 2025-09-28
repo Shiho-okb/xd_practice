@@ -32,41 +32,75 @@
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script defer src="./js/script.min.js"></script>
 </head>
+
 <body>
+  <!-- ヘッダー -->
+  <header class="p-header l-header js-header">
+    <div class="p-header__wrapper">
+      <button class="p-header__hamburger js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="p-header__nav js-drawer">
+        <div class="p-header__nav-inner">
+          <div class="p-header__nav-inner2">
+            <ul class="p-header__nav-list">
+              <li class="p-header__nav-item p-header-nav-item">
+                <a href="#" class="p-header-nav-item__link">BLOG</a>
+              </li>
+              <li class="p-header__nav-item">
+                <a href="#" class="p-header-nav-item__link">PRODUCTS</a>
+              </li>
+              <li class="p-header__nav-item">
+                <a href="#" class="p-header-nav-item__link">NEWS</a>
+              </li>
+            </ul>
+            <ul class="p-header__btnlist">
+              <li class="p-header__btnitem p-header__btnitem--reservation">
+                <a href="./reservation.html" class="c-btn02">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
   <div class="l-inner">
     <p class="p-test">パーツページです</p>
-  </div>
 
-  <!-- c-title -->
-  <h2 class="c-title" data-sub="ブログ">BLOG</h2>
+    <!-- c-title -->
+    <h2 class="c-title" data-sub="ブログ">BLOG</h2>
 
-  <!-- c-btn -->
-  <a href="#" class="c-btn">More</a>
-  <a href="#" class="c-btn c-btn--secondary">More</a>
+    <!-- c-btn -->
+    <a href="#" class="c-btn">More</a>
+    <a href="#" class="c-btn c-btn--secondary">More</a>
 
-  <!-- c-card -->
-  <div class="c-card">
-    <picture class="c-card__img">
-      <source srcset="images/dummy01.png" media="(min-width: 768px)">
-      <img src="images/dummy01.png" alt="">
-    </picture>
-    <div class="c-card__wrapper">
-      <h3 class="c-card__title">Lorem ipsum dolor</h3>
-      <p class="c-card__text">Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    <!-- c-card -->
+    <div class="c-card">
+      <picture class="c-card__img">
+        <source srcset="images/dummy1.jpg" media="(min-width: 768px)">
+        <img src="images/dummy1.jpg" alt="ダミー画像">
+      </picture>
+      <div class="c-card__wrapper">
+        <h3 class="c-card__title">Lorem ipsum dolor</h3>
+        <p class="c-card__text">Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+      </div>
+    </div>
+
+    <!-- c-card--02 -->
+    <div class="c-card c-card--02">
+      <picture class="c-card__img">
+        <source srcset="images/dummy1.jpg" media="(min-width: 768px)">
+        <img src="images/dummy1.jpg" alt="ダミー画像">
+      </picture>
+      <div class="c-card__wrapper">
+        <h3 class="c-card__title">Lorem ipsum dolor</h3>
+        <p class="c-card__text">Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+      </div>
     </div>
   </div>
 
-  <!-- c-card--02 -->
-  <div class="c-card c-card--02">
-    <picture class="c-card__img">
-      <source srcset="images/dummy1.png" media="(min-width: 768px)">
-      <img src="images/dummy1.png" alt="ダミー画像">
-    </picture>
-    <div class="c-card__wrapper">
-      <h3 class="c-card__title">Lorem ipsum dolor</h3>
-      <p class="c-card__text">Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-    </div>
-  </div>
 
 </body>
 </html>
