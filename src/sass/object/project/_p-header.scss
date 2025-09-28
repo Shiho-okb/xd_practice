@@ -8,38 +8,26 @@
   top: 0;
   z-index: 44;
   padding: myrem(20) myrem(20);
-
   @include mq(md) {
-    height: myrem(82);
-    padding: 0;
-    transition: 0.4s;
   }
 }
 
 .p-header__wrapper {
-  height: inherit;
   display: flex;
   justify-content: flex-end;
-
   @include mq(md) {
-    align-items: center;
-    gap: myrem(15);
-    padding-left: myrem(50);
   }
 }
 
 .p-header__hamburger {
   height: myrem(20);
   width: myrem(32);
-  // padding: myrem(20) myrem(20);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: relative;
   z-index: 44;
-
   @include mq(md) {
-    display: none;
   }
 }
 
@@ -74,141 +62,66 @@
   background-color: $cream;
   top: 0;
   left: 0;
-  padding: myrem(80) myrem(20) myrem(20);
+  padding: myrem(203) myrem(20) myrem(0);
   z-index: 43;
-
   @include mq(md) {
-    display: flex;
-    position: static;
-    height: inherit;
-    width: 100%;
-    padding: 0;
-    align-items: center;
-    background-color: transparent;
-    justify-content: flex-end;
+    display: none;
   }
 }
 
 .p-header__nav-inner {
   height: 100%;
-  overflow: auto;
-
+  display: flex;
+  justify-content: center;
   @include mq(md) {
-    height: inherit;
-    overflow: initial;
   }
 }
 
 .p-header__nav-inner2 {
   display: flex;
   flex-direction: column;
-  align-items: center;
   height: inherit;
   min-height: myrem(470);
-  text-align: center;
-
+  gap: myrem(86);
   @include mq(md) {
-    min-height: initial;
-    height: inherit;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: myrem(15);
   }
 }
 
 .p-header__nav-list {
-  width: myrem(280);
-  margin-inline: auto;
-  order: 2;
-  margin-top: myrem(40);
-
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   @include mq(md) {
-    order: initial;
-    display: flex;
-    width: initial;
-    justify-content: flex-start;
-    height: inherit;
-    margin-inline: initial;
-    margin-top: initial;
   }
 }
 
 .p-header__nav-item {
+  word-break: break-all;
   @include mq(md) {
-    height: inherit;
-    position: relative;
-    display: flex;
-    align-items: center;
-    transition: 0.4s;
   }
 }
 
 .p-header__nav-item:not(:first-child)::before {
   @include mq(md) {
-    content: "";
-    position: absolute;
-    width: 1px;
-    height: myrem(16);
-    background: $black;
   }
 }
 
 .p-header-nav-item__link {
-  border-bottom: 1px solid #707070;
   display: block;
   text-align: center;
-  padding: myrem(15);
-  font-size: myrem(16);
-  line-height: calc(32 / 16);
+  margin-bottom: myrem(64);
+  font-size: myrem(24);
+  font-weight: 500;
+  line-height: calc(29 / 24);
   letter-spacing: 0.05em;
-  color: $black;
+  color: $orange;
   width: 100%;
-
   @include mq(md) {
-    font-size: myrem(16);
-    color: $black;
-    height: inherit;
-    display: flex;
-    align-items: center;
-    padding: myrem(10);
-    border-bottom: none;
-    transition: 0.4s;
   }
 }
 
 .p-header-nav-item__link:hover {
   @include mq(md) {
-    // color: $blue1;
-    font-weight: bold;
-    opacity: 1;
-  }
-}
-
-.p-header__btnlist {
-  display: flex;
-  flex-direction: column;
-  gap: myrem(20);
-  width: myrem(280);
-
-  @include mq(md) {
-    width: initial;
-    flex-direction: row;
-    height: inherit;
-    gap: initial;
-  }
-}
-
-.p-header__btnitem {
-  @include mq(md) {
-    height: inherit;
-    width: myrem(262);
-  }
-}
-
-.p-header__btnitem--reservation {
-  @include mq(md) {
-    height: inherit;
-    width: myrem(120);
   }
 }
 

@@ -36,13 +36,13 @@
   }
 }
 
-.c-card--02 .c-card__wrapper {
+.c-card--small .c-card__wrapper {
   @include mq(md) {
   padding: myrem(28.1) myrem(20) myrem(28.6);
   }
 }
 
-.c-card--02 .c-card__title {
+.c-card--small .c-card__title {
   @include mq(md) {
   margin-bottom: myrem(33.3);
   }

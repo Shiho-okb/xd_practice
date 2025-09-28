@@ -7,7 +7,7 @@
   font-size: myrem(17);
   font-weight: 500;
   line-height: calc(21 / 17);
-  padding: myrem(16) myrem(73);
+  padding: myrem(16) myrem(74);
   border-radius: myrem(6);
   @include mq(md) {
   }
@@ -17,7 +17,13 @@
   background-color: $white;
   border: 1px solid $orange;
   color: $orange;
-  padding: myrem(15) myrem(72);
+  padding: myrem(15) myrem(73);
+  @include mq(md) {
+  }
+}
+
+.c-btn--contact {
+  padding: myrem(16) myrem(62);
   @include mq(md) {
   }
 }
