@@ -1,0 +1,57 @@
+@use 'global' as *;
+
+.l-footer {
+  width: 100%;
+  height: myrem(302);
+  background: $cream;
+  bottom: 0;
+  padding: myrem(120.4) myrem(20) myrem(51.2);
+  @include mq(md) {
+    padding: myrem(140.4) myrem(20) myrem(52.1);
+  }
+}
+
+.l-footer__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  gap: myrem(31.5);
+  @include mq(md) {
+   gap: myrem(41.5);
+  }
+}
+
+.l-footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: myrem(11);
+  @include mq(md) {
+    flex-direction: row;
+    gap: myrem(24);
+  }
+}
+
+.l-footer-item__link {
+  word-break: break-all;
+  display: block;
+  text-align: center;
+  font-size: myrem(15);
+  font-weight: 500;
+  line-height: calc(18 / 15);
+  letter-spacing: -0.015em;
+  color: $orange;
+  width: 100%;
+}
+
+.l-footer-item__link:hover {
+  font-weight: bold;
+  opacity: 1;
+}
+
+.l-footer__copyright {
+  font-size: myrem(15);
+  line-height: calc(24 / 15);
+  letter-spacing: -0.015em;
+  color: $black;
+}
