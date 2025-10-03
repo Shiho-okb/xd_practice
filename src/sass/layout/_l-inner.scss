@@ -11,5 +11,6 @@
     max-width: $innerWidth + $padding-pc * 2;
     padding-right: myrem(strip-unit($padding-pc));
     padding-left: myrem(strip-unit($padding-pc));
+    margin-top: myrem(127.8);
   }
 }

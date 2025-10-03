@@ -15,7 +15,7 @@
 }
 
 .c-card__wrapper {
-  padding: myrem(28.1) myrem(20) myrem(29.4);
+  padding: myrem(28.1) myrem(20) myrem(25.4);
   @include mq(md) {
   }
 }
@@ -24,7 +24,7 @@
   font-size: myrem(24);
   font-weight: bold;
   line-height: calc(36 / 24);
-  margin-bottom: myrem(32.5);
+  margin-bottom: myrem(22.5);
   @include mq(md) {
   }
 }

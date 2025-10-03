@@ -1,0 +1,30 @@
+@use "global" as *;
+
+.l-blog__text {
+  font-size: myrem(16);
+  line-height: calc(32 / 16);
+  padding: myrem(19) 0 myrem(31);
+  @include mq(md) {
+    font-size: myrem(36);
+    line-height: calc(50 / 36);
+    padding: myrem(67.3) 0 myrem(102.7);
+    text-align: right;
+  }
+}
+
+.l-blog__cards {
+  display: flex;
+  flex-direction: column;
+  gap: myrem(25);
+  @include mq(md) {
+    flex-direction: row;
+    gap: myrem(33);
+  }
+}
+
+.l-blog__cards + .c-btn {
+  margin: myrem(50) 0;
+  @include mq(md) {
+    margin: myrem(80) 0 myrem(120);
+  }
+}

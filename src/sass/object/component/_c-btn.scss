@@ -1,6 +1,21 @@
 @use "global" as *;
 
 .c-btn {
+  display: flex;
+  justify-content: center;
+  @include mq(md) {
+    // justify-content: flex-start;
+  }
+}
+
+.c-btn.c-btn--left {
+  @include mq(md) {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+.c-btn__link {
   display: inline-block;
   background-color: $orange;
   color: $white;
@@ -13,17 +28,13 @@
   }
 }
 
-.c-btn--secondary {
+.c-btn--secondary .c-btn__link {
   background-color: $white;
-  border: 1px solid $orange;
-  color: $orange;
-  padding: myrem(15) myrem(73);
-  @include mq(md) {
-  }
+    border: 1px solid $orange;
+    color: $orange;
+    padding: myrem(15) myrem(73);
 }
 
-.c-btn--contact {
+.c-btn--contact .c-btn__link {
   padding: myrem(16) myrem(62);
-  @include mq(md) {
-  }
 }
