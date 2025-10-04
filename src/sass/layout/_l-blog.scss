@@ -23,8 +23,8 @@
 }
 
 .l-blog__cards + .c-btn {
-  margin: myrem(50) 0;
+  padding: myrem(50) 0;
   @include mq(md) {
-    margin: myrem(80) 0 myrem(120);
+    padding: myrem(80) 0 myrem(120);
   }
 }

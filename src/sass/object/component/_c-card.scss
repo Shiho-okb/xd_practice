@@ -2,8 +2,7 @@
 
 .c-card {
   border: 1px solid rgba(0, 0, 0, 0.5);
-  @include mq(md) {
-  }
+  background-color: $white;
 }
 
 .c-card__img img {
@@ -11,13 +10,10 @@
   width: 100%;
   height: auto;
   object-fit: cover;
-  @include mq(md) {}
 }
 
 .c-card__wrapper {
   padding: myrem(28.1) myrem(20) myrem(25.4);
-  @include mq(md) {
-  }
 }
 
 .c-card__title {
@@ -25,14 +21,16 @@
   font-weight: bold;
   line-height: calc(36 / 24);
   margin-bottom: myrem(22.5);
-  @include mq(md) {
-  }
 }
 
 .c-card__text {
   font-size: myrem(18);
   line-height: calc(30 / 18);
+}
+
+.c-card--small .c-card__img img {
   @include mq(md) {
+    aspect-ratio: 250 / 160;
   }
 }
 
@@ -44,6 +42,6 @@
 
 .c-card--small .c-card__title {
   @include mq(md) {
-  margin-bottom: myrem(33.3);
+  margin-bottom: myrem(26.3);
   }
 }

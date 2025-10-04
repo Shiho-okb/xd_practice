@@ -6,11 +6,11 @@
   padding-left: myrem(strip-unit($padding-sp));
   margin-right: auto;
   margin-left: auto;
-  margin-top: myrem(60);
+  padding-top: myrem(60);
   @include mq(md) {
     max-width: $innerWidth + $padding-pc * 2;
     padding-right: myrem(strip-unit($padding-pc));
     padding-left: myrem(strip-unit($padding-pc));
-    margin-top: myrem(127.8);
+    padding-top: myrem(127.8);
   }
 }

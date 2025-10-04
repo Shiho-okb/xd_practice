@@ -3,9 +3,6 @@
 .c-btn {
   display: flex;
   justify-content: center;
-  @include mq(md) {
-    // justify-content: flex-start;
-  }
 }
 
 .c-btn.c-btn--left {
@@ -24,7 +21,13 @@
   line-height: calc(21 / 17);
   padding: myrem(16) myrem(74);
   border-radius: myrem(6);
+}
+
+.c-btn.c-btn--secondary {
   @include mq(md) {
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: myrem(13);
   }
 }
 
