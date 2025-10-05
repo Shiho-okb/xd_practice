@@ -1,29 +1,38 @@
 @use "global" as *;
 
-.p-blog__text {
+.p-news__box {
+  @include mq(md) {
+    display: flex;
+    margin-bottom: myrem(64);
+  }
+}
+
+.p-news__text {
   font-size: myrem(16);
   line-height: calc(32 / 16);
   padding: myrem(19) 0 myrem(31);
   @include mq(md) {
     font-size: myrem(36);
     line-height: calc(50 / 36);
-    padding: myrem(67.3) 0 myrem(102.7);
-    text-align: right;
+    padding: myrem(83.3) 0 myrem(82.7);
+    text-align: left;
   }
 }
 
-.p-blog__cards {
+.p-news__cards {
   display: flex;
   flex-direction: column;
   gap: myrem(25);
+
   @include mq(md) {
     flex-direction: row;
     gap: myrem(33);
   }
 }
 
-.p-blog .c-btn.c-btn--left {
+.p-news .c-btn.c-btn--left {
   padding-top: myrem(50);
+
   @include mq(md) {
     padding-top: myrem(80);
   }

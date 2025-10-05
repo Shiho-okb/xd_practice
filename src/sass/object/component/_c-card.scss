@@ -50,5 +50,18 @@
 .c-card--small .c-card__title {
   @include mq(md) {
   margin-bottom: myrem(26.3);
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  }
+}
+
+.c-card--small .c-card__text {
+  @include mq(md) {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 }

@@ -45,21 +45,3 @@
     width: myrem(533);
   }
 }
-
-.p-products__cards .c-card__title {
-  @include mq(md) {
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
-}
-
-.p-products__cards .c-card__text {
-  @include mq(md) {
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
-}
