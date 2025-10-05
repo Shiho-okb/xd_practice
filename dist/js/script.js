@@ -42,4 +42,11 @@ jQuery(function ($) {
     $("body").toggleClass("active");
     $('.js-drawer').fadeToggle();
   });
+
+  $('.js-drawer a').on('click', function (e) {
+    e.stopPropagation();
+    $('.js-hamburger').toggleClass('is-active');
+    $("body").toggleClass("active");
+    $('.js-drawer').fadeToggle();
+  });
 });
