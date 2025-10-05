@@ -24,7 +24,9 @@
 }
 
 .c-btn.c-btn--secondary {
+  padding: myrem(50) 0;
   @include mq(md) {
+    padding: 0;
     justify-content: flex-start;
     align-items: flex-start;
     margin-top: myrem(13);

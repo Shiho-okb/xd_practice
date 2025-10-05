@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.l-blog__text {
+.p-blog__text {
   font-size: myrem(16);
   line-height: calc(32 / 16);
   padding: myrem(19) 0 myrem(31);
@@ -12,7 +12,7 @@
   }
 }
 
-.l-blog__cards {
+.p-blog__cards {
   display: flex;
   flex-direction: column;
   gap: myrem(25);
@@ -22,7 +22,7 @@
   }
 }
 
-.l-blog__cards + .c-btn {
+.p-blog .c-btn.c-btn--left {
   padding: myrem(50) 0;
   @include mq(md) {
     padding: myrem(80) 0 myrem(120);

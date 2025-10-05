@@ -1,0 +1,65 @@
+@use "global" as *;
+
+.p-products {
+  background-color: $cream;
+}
+
+.p-products__wrapper {
+  background-color: $cream;
+  display: flex;
+  flex-direction: column;
+  @include mq(md) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    }
+}
+
+.p-products__body {
+  display: contents;
+  @include mq(md) {
+    display: block;
+  }
+}
+
+.p-products__body .c-title {
+  order: 1;
+  margin-bottom: myrem(17);
+}
+
+.p-products__body .c-btn {
+  order: 3;
+}
+
+.p-products__cards {
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  gap: myrem(25);
+  @include mq(md) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap:myrem(25) myrem(33);
+    grid-row: span 2 / span 2;
+    width: myrem(533);
+  }
+}
+
+.p-products__cards .c-card__title {
+  @include mq(md) {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+.p-products__cards .c-card__text {
+  @include mq(md) {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}

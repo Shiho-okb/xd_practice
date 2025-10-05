@@ -34,9 +34,16 @@
   }
 }
 
+.c-card.c-card--small {
+  @include mq(md) {
+    width: myrem(250);
+    // height: myrem(361);;
+  }
+}
+
 .c-card--small .c-card__wrapper {
   @include mq(md) {
-  padding: myrem(28.1) myrem(20) myrem(28.6);
+  padding: myrem(26.1) myrem(20) myrem(26.6);
   }
 }
 

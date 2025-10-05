@@ -1,21 +1,20 @@
 @use "global" as *;
 
-.l-mainvisual {
+.p-mainvisual {
   position: relative;
   display: flex;
   justify-content: center;
 }
 
-.l-mainvisual__img img {
+.p-mainvisual__img img {
   aspect-ratio: 1440 / 960;
   width: 100%;
   height: myrem(960);
   object-fit: cover;
-  // object-position: top 0 left 0;
   opacity: 0.7;
 }
 
-.l-mainvisual__text {
+.p-mainvisual__text {
   position: absolute;
   top: myrem(403);
   z-index: 10;
@@ -25,7 +24,7 @@
   }
 }
 
-.l-mainvisual__title {
+.p-mainvisual__title {
   font-size: myrem(24);
   line-height: calc(36 / 24);
   letter-spacing: 0.015em;
