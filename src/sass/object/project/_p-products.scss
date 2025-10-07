@@ -4,6 +4,12 @@
   background-color: $cream;
 }
 
+.l-inner.products__inner {
+  @include mq(md) {
+    padding-top: myrem(110);
+  }
+}
+
 .p-products__wrapper {
   background-color: $cream;
   display: flex;
@@ -12,7 +18,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    }
+  }
 }
 
 .p-products__body {

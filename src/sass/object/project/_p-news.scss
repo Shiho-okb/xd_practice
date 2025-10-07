@@ -7,6 +7,13 @@
   }
 }
 
+.p-news__box .c-title {
+  margin-bottom: myrem(15);
+  @include mq(md) {
+    margin-bottom: 0;
+  }
+}
+
 .p-news__text {
   font-size: myrem(16);
   line-height: calc(32 / 16);
@@ -23,7 +30,6 @@
   display: flex;
   flex-direction: column;
   gap: myrem(25);
-
   @include mq(md) {
     flex-direction: row;
     gap: myrem(33);
@@ -32,7 +38,6 @@
 
 .p-news .c-btn.c-btn--left {
   padding-top: myrem(50);
-
   @include mq(md) {
     padding-top: myrem(80);
   }

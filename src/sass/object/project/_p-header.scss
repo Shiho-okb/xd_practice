@@ -23,6 +23,9 @@
   justify-content: space-between;
   position: relative;
   z-index: 44;
+  @include mq(md) {
+    margin-right: myrem(14);
+  }
 }
 
 .p-header__hamburger span {

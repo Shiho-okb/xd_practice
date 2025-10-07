@@ -1,5 +1,9 @@
 @use "global" as *;
 
+.p-blog__wrapper .c-title {
+  margin-right: myrem(15);
+}
+
 .p-blog__text {
   font-size: myrem(16);
   line-height: calc(32 / 16);

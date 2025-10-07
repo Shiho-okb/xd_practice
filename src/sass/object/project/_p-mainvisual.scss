@@ -4,33 +4,41 @@
   position: relative;
   display: flex;
   justify-content: center;
+  margin-top: myrem(60);
+}
+
+.p-mainvisual__img {
+  aspect-ratio: 1440 / 960;
+  @include mq(md) {
+    width: 100%;
+  }
 }
 
 .p-mainvisual__img img {
-  aspect-ratio: 1440 / 960;
   width: 100%;
   height: myrem(960);
   object-fit: cover;
   opacity: 0.7;
+  @include mq(md) {
+    height: 100%;
+  }
 }
 
 .p-mainvisual__text {
   position: absolute;
-  top: myrem(403);
   z-index: 10;
   text-align: center;
-  @include mq(md) {
-    top: myrem(398);
-  }
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .p-mainvisual__title {
   font-size: myrem(24);
   line-height: calc(36 / 24);
-  letter-spacing: 0.015em;
+  letter-spacing: -0.015em;
   padding: 0 myrem(20) myrem(30);
   @include mq(md) {
     font-size: myrem(56);
     line-height: calc(80 / 56);
-    }
+  }
 }
