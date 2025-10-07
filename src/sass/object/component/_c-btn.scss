@@ -29,7 +29,7 @@
 }
 
 .c-btn.c-btn--secondary {
-  padding: myrem(50) 0;
+  padding-top: myrem(50);
   @include mq(md) {
     padding: 0;
     justify-content: flex-start;
