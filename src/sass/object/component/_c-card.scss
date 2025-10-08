@@ -21,7 +21,10 @@
 }
 
 .c-card__wrapper {
-  padding: myrem(28.1) myrem(20) myrem(25.4);
+  padding: myrem(26.1) myrem(20) myrem(26.4);
+  @include mq(md) {
+    padding: myrem(26.1) myrem(20) myrem(27.4);
+  }
 }
 
 .c-card__title {
@@ -54,14 +57,15 @@
 }
 
 .c-card--small .c-card__wrapper {
+  padding: myrem(26.1) myrem(20) myrem(27.4);
   @include mq(md) {
-    padding: myrem(26.1) myrem(20) myrem(24.6);
+    padding: myrem(26.1) myrem(20) myrem(26.6);
   }
 }
 
 .c-card--small .c-card__title {
   @include mq(md) {
-    margin-bottom: myrem(26.3);
+    margin-bottom: myrem(23.3);
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;

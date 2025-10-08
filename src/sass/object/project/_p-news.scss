@@ -17,7 +17,7 @@
 .p-news__text {
   font-size: myrem(16);
   line-height: calc(32 / 16);
-  padding: myrem(19) 0 myrem(31);
+  padding: myrem(24.1) 0 myrem(30.9);
   @include mq(md) {
     font-size: myrem(36);
     line-height: calc(50 / 36);

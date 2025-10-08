@@ -6,8 +6,8 @@
   padding-left: myrem(strip-unit($padding-sp));
   margin-right: auto;
   margin-left: auto;
-  padding-top: myrem(60);
-  padding-bottom: myrem(60);
+  padding-top: myrem(58.4);
+  padding-bottom: myrem(50);
   @include mq(md) {
     max-width: $innerWidth + $padding-pc * 2;
     padding-right: myrem(strip-unit($padding-pc));

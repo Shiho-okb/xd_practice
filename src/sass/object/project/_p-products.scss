@@ -5,6 +5,7 @@
 }
 
 .l-inner.products__inner {
+  padding-top: myrem(56.4);
   @include mq(md) {
     padding-top: myrem(110);
   }
@@ -30,7 +31,7 @@
 
 .p-products__body .c-title {
   order: 1;
-  margin-bottom: myrem(17);
+  margin-bottom: myrem(18);
 }
 
 .p-products__body .c-btn {
