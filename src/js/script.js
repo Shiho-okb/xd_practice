@@ -32,6 +32,13 @@ jQuery(function ($) {
     if (!target.length) return;
     let targetY = target.offset().top - header;
     $('html,body').animate({ scrollTop: targetY }, time, 'swing');
+
+    // クリックされた要素（this）がドロワーメニュー内にある場合、メニューを閉じる処理も実行する
+    if ($(this).closest('.js-drawer').length) {
+      $('.js-hamburger').removeClass('is-active');
+      $('body').removeClass('active');
+      $('.js-drawer').fadeOut();
+  }
     return false;
   });
 
@@ -43,10 +50,10 @@ jQuery(function ($) {
     $('.js-drawer').fadeToggle();
   });
 
-  $('.js-drawer a').on('click', function (e) {
-    e.stopPropagation();
-    $('.js-hamburger').toggleClass('is-active');
-    $("body").toggleClass("active");
-    $('.js-drawer').fadeToggle();
+  // 背景をクリックした時にメニューを閉じる
+  $('.js-drawer').on('click', function () {
+    $('.js-hamburger').removeClass('is-active');
+    $("body").removeClass("active");
+    $(this).fadeOut();
   });
 });

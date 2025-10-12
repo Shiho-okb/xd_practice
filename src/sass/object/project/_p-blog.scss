@@ -1,12 +1,15 @@
 @use "global" as *;
 
 .p-blog__wrapper .c-title {
-  margin-right: myrem(15);
+  @include mq(md) {
+    margin-right: myrem(15);
+  }
 }
 
 .p-blog__text {
   font-size: myrem(16);
   line-height: calc(32 / 16);
+  color: $black02;
   padding: myrem(16) 0 myrem(29);
   @include mq(md) {
     font-size: myrem(36);

@@ -5,9 +5,9 @@
   height: myrem(302);
   background: $cream;
   bottom: 0;
-  padding: myrem(120.4) myrem(20) myrem(51.2);
+  padding: myrem(115) myrem(20) myrem(51.2);
   @include mq(md) {
-    padding: myrem(140.4) myrem(20) myrem(52.1);
+    padding: myrem(133.4) myrem(20) myrem(52.1);
   }
 }
 
@@ -16,19 +16,17 @@
   flex-direction: column;
   align-items: center;
   height: 100%;
-  gap: myrem(31.5);
+  gap: myrem(22);
   @include mq(md) {
-   gap: myrem(41.5);
+   gap: myrem(32);
   }
 }
 
 .p-footer__list {
   display: flex;
   flex-direction: column;
-  gap: myrem(11);
   @include mq(md) {
     flex-direction: row;
-    gap: myrem(24);
   }
 }
 
@@ -42,16 +40,22 @@
   letter-spacing: -0.015em;
   color: $orange;
   width: 100%;
+  padding: myrem(7) myrem(10);
+  @include mq(md) {
+    padding: myrem(7) myrem(12);
+  }
 }
 
 .p-footer-item__link:hover {
-  font-weight: bold;
-  opacity: 1;
+  @include mq(md) {
+    font-weight: bold;
+    opacity: 1;
+  }
 }
 
 .p-footer__copyright {
   font-size: myrem(15);
   line-height: calc(24 / 15);
   letter-spacing: -0.015em;
-  color: $black;
+  color: $black02;
 }

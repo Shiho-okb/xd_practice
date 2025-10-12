@@ -21,7 +21,7 @@
   font-size: myrem(14);
   font-weight: normal;
   letter-spacing: 0.03em;
-  color: $black;
+  color: $black02;
   line-height: calc(14 / 14);
   @include mq(md) {
     font-size: myrem(20);

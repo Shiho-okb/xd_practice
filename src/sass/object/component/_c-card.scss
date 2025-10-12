@@ -37,6 +37,7 @@
 .c-card__text {
   font-size: myrem(18);
   line-height: calc(30 / 18);
+  color: $black02;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
