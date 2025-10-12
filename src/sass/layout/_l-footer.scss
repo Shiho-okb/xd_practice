@@ -1,0 +1,8 @@
+@use 'global' as *;
+
+.l-footer {
+  padding: myrem(115) myrem(20) myrem(51.2);
+  @include mq(md) {
+    padding: myrem(133.4) myrem(20) myrem(52.1);
+  }
+}
