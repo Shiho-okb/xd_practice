@@ -1,8 +1,13 @@
 @use "global" as *;
 
+.p-blog__inner {
+  // セクション固有のインナー幅はmax-widthで調整する
+  // max-width: myrem();
+}
+
 .p-blog__wrapper .c-title {
   @include mq(md) {
-    margin-right: myrem(15);
+    padding-right: myrem(15);
   }
 }
 
@@ -10,11 +15,11 @@
   font-size: myrem(16);
   line-height: calc(32 / 16);
   color: $black02;
-  padding: myrem(16) 0 myrem(29);
+  margin-top: myrem(16);
   @include mq(md) {
     font-size: myrem(36);
     line-height: calc(50 / 36);
-    padding: myrem(67.3) 0 myrem(102.7);
+    margin-top: myrem(67.3);
     text-align: right;
   }
 }
@@ -23,15 +28,26 @@
   display: flex;
   flex-direction: column;
   gap: myrem(25);
+  margin-top: myrem(29);
   @include mq(md) {
     flex-direction: row;
     gap: myrem(33);
+    margin-top: myrem(102.7);
   }
 }
 
-.p-blog .c-btn.c-btn--left {
-  padding-top: myrem(50);
+.p-blog__card {
   @include mq(md) {
-    padding-top: myrem(80);
+    width: myrem(345);
+  }
+}
+
+.p-blog__btn {
+  display: flex;
+  justify-content: center;
+  margin-top: myrem(50);
+  @include mq(md) {
+    justify-content: flex-start;
+    margin-top: myrem(80);
   }
 }

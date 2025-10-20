@@ -6,19 +6,17 @@
 }
 
 .p-mainvisual__img {
-  aspect-ratio: 1440 / 960;
-  @include mq(md) {
-    width: 100%;
-  }
+  width: 100%;
+  height: myrem(960);
 }
 
 .p-mainvisual__img img {
   width: 100%;
-  height: myrem(960);
+  aspect-ratio: 1440 / 960;
   object-fit: cover;
   opacity: 0.7;
   @include mq(md) {
-    height: 100%;
+    height: auto;
   }
 }
 
@@ -36,9 +34,19 @@
   font-size: myrem(24);
   line-height: calc(36 / 24);
   letter-spacing: -0.015em;
-  padding: 0 myrem(20) myrem(30);
+  padding: 0 myrem(20);
   @include mq(md) {
     font-size: myrem(56);
     line-height: calc(80 / 56);
   }
+}
+
+.p-mainvisual__btn {
+  display: flex;
+  justify-content: center;
+  margin-top: myrem(30);
+}
+
+.p-mainvisual__btn .c-btn {
+  padding: myrem(16) myrem(62);
 }

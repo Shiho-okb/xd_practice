@@ -4,11 +4,9 @@
   background-color: $cream;
 }
 
-.l-inner.products__inner {
-  padding-top: myrem(56.4);
-  @include mq(md) {
-    padding-top: myrem(110);
-  }
+.p-products__inner {
+  // セクション固有のインナー幅はmax-widthで調整する
+  // max-width: myrem();
 }
 
 .p-products__wrapper {
@@ -31,11 +29,19 @@
 
 .p-products__body .c-title {
   order: 1;
-  margin-bottom: myrem(18);
 }
 
-.p-products__body .c-btn {
+.p-products__btn {
+  display: flex;
+  justify-content: center;
   order: 3;
+  margin-top: myrem(50);
+  @include mq(md) {
+    padding: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: myrem(13);
+  }
 }
 
 .p-products__cards {
@@ -43,6 +49,7 @@
   display: flex;
   flex-direction: column;
   gap: myrem(25);
+  margin-top: myrem(17);
   @include mq(md) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -50,5 +57,11 @@
     gap:myrem(25) myrem(33);
     grid-row: span 2 / span 2;
     width: myrem(533);
+  }
+}
+
+.p-products__card {
+  @include mq(md) {
+    width: myrem(250);
   }
 }

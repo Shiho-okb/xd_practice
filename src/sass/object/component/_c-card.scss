@@ -3,21 +3,19 @@
 .c-card {
   border: 1px solid rgba(0, 0, 0, 0.5);
   background-color: $white;
-  @include mq(md) {
-    width: myrem(345);
-  }
 }
 
 .c-card__img {
-  aspect-ratio: 335 / 216;
-  overflow: hidden;
+  width: 100%;
 }
 
 .c-card__img img {
   width: 100%;
-  height: 100%;
+  height: auto;
+  aspect-ratio: 335 / 216;
   object-fit: cover;
   object-position: center;
+  overflow: hidden;
 }
 
 .c-card__wrapper {
@@ -31,7 +29,6 @@
   font-size: myrem(24);
   font-weight: bold;
   line-height: calc(36 / 24);
-  margin-bottom: myrem(22.5);
 }
 
 .c-card__text {
@@ -42,18 +39,17 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  margin-top: myrem(22.5);
 }
 
 .c-card--small .c-card__img {
+  width: 100%;
+}
+
+.c-card--small .c-card__img img{
   @include mq(md) {
     aspect-ratio: 250 / 160;
     overflow: hidden;
-  }
-}
-
-.c-card.c-card--small {
-  @include mq(md) {
-    width: myrem(250);
   }
 }
 
@@ -66,7 +62,6 @@
 
 .c-card--small .c-card__title {
   @include mq(md) {
-    margin-bottom: myrem(23.3);
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
@@ -79,4 +74,7 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  @include mq(md) {
+    margin-top: myrem(23.3);
+  }
 }

@@ -1,1 +1,10 @@
 @use 'global' as *;
+
+.l-products {
+  padding-top: myrem(56.4);
+  padding-bottom: myrem(50);
+  @include mq(md) {
+    padding-top: myrem(110);
+    padding-bottom: myrem(120);
+  }
+}

@@ -1,21 +1,19 @@
 @use 'global' as *;
 
 .p-footer {
-  width: 100%;
   height: myrem(302);
   background: $cream;
-  bottom: 0;
 }
 
 .p-footer__inner {
+  padding: 0 myrem(20);
+}
+
+.p-footer__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100%;
-  gap: myrem(22);
-  @include mq(md) {
-   gap: myrem(32);
-  }
 }
 
 .p-footer__list {
@@ -37,6 +35,7 @@
   color: $orange;
   width: 100%;
   padding: myrem(7) myrem(10);
+  text-transform: uppercase;
   @include mq(md) {
     padding: myrem(7) myrem(12);
   }
@@ -54,4 +53,8 @@
   line-height: calc(24 / 15);
   letter-spacing: -0.015em;
   color: $black02;
+  margin-top: myrem(22);
+  @include mq(md) {
+    margin-top: myrem(32);
+  }
 }

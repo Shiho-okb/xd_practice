@@ -1,2 +1,10 @@
 @use 'global' as *;
 
+.l-news {
+  padding-top: myrem(58.4);
+  padding-bottom: myrem(50);
+  @include mq(md) {
+    padding-top: myrem(127.8);
+    padding-bottom: myrem(120);
+  }
+}

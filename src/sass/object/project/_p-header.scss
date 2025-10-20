@@ -1,12 +1,14 @@
 @use "global" as *;
 
 .p-header {
-  width: 100%;
   height: myrem(60);
   background: $cream;
-  position: fixed;
-  top: 0;
-  z-index: 44;
+}
+
+.p-header__inner {
+  @include mq(md) {
+    padding-inline: 0 myrem(14);
+  }
 }
 
 .p-header__wrapper {
@@ -20,9 +22,6 @@
   z-index: 44;
   padding: myrem(20) myrem(20);
   cursor: pointer;
-  @include mq(md) {
-    margin-right: myrem(14);
-  }
 }
 
 .p-header__hamburger span {
@@ -54,7 +53,7 @@
   transform: translateY(myrem(-10)) rotate(-45deg);
 }
 
-.p-header__nav {
+.p-header__menu {
   display: none;
   position: fixed;
   height: 100vh;
@@ -62,25 +61,25 @@
   background-color: $cream;
   top: 0;
   left: 0;
-  padding: myrem(193) myrem(20) myrem(0);
+  padding-top: myrem(193);
   z-index: 43;
   @include mq(md) {
     display: none;
   }
 }
 
-.p-header__nav-inner {
-  height: 100%;
-  display: flex;
-  justify-content: center;
+.p-header__menu-inner {
+  padding: myrem(0) myrem(91);
+  @include mq(md) {
+    padding: myrem(0);
+  }
 }
 
-.p-header__nav-inner2 {
-  display: flex;
-  flex-direction: column;
-  height: inherit;
-  min-height: myrem(470);
-  gap: myrem(140);
+.p-header__menu-wrapper {
+  @include mq(md) {
+    width: myrem(192);
+    margin: 0 auto;
+  }
 }
 
 .p-header__nav-list {
@@ -92,11 +91,11 @@
 .p-header__nav-item {
   width: 100%;
   height: 100%;
-  margin-bottom: myrem(44);
+  margin-top: myrem(44);
 }
 
-.p-header__nav-item:last-child {
-  margin-bottom: 0;
+.p-header__nav-item:first-child {
+  margin-top: 0;
 }
 
 .p-header-nav-item__link {
@@ -108,6 +107,7 @@
   color: $orange;
   width: 100%;
   padding: myrem(10) myrem(0);
+  text-transform: uppercase;
 }
 
 .p-header-nav-item__link:hover {
@@ -115,6 +115,16 @@
     font-weight: bold;
     opacity: 1;
   }
+}
+
+.p-header__btn {
+  display: flex;
+  justify-content: center;
+  margin-top: myrem(150);
+}
+
+.p-header__btn .c-btn {
+  padding: myrem(16) myrem(62);
 }
 
 /* ハンバーガーメニュー展開時、背景を固定 */

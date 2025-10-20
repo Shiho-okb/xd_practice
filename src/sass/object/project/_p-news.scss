@@ -1,9 +1,13 @@
 @use "global" as *;
 
+.p-news__inner {
+  // セクション固有のインナー幅はmax-widthで調整する
+  // max-width: myrem();
+}
+
 .p-news__box {
   @include mq(md) {
     display: flex;
-    margin-bottom: myrem(64);
   }
 }
 
@@ -14,15 +18,19 @@
   }
 }
 
+.p-news__cards {
+  margin-top: myrem(64);
+}
+
 .p-news__text {
   font-size: myrem(16);
   line-height: calc(32 / 16);
   color: $black02;
-  padding: myrem(24.1) 0 myrem(30.9);
+  margin-top: myrem(24.1);
   @include mq(md) {
     font-size: myrem(36);
     line-height: calc(50 / 36);
-    padding: myrem(83.3) 0 myrem(82.7);
+    margin-top: myrem(83.3);
     text-align: left;
   }
 }
@@ -37,9 +45,18 @@
   }
 }
 
-.p-news .c-btn.c-btn--left {
-  padding-top: myrem(50);
+.p-news__card {
   @include mq(md) {
-    padding-top: myrem(80);
+    width: myrem(250);
+  }
+}
+
+.p-news__btn {
+  display: flex;
+  justify-content: center;
+  margin-top: myrem(30.9);
+  @include mq(md) {
+    justify-content: flex-end;
+    margin-top: myrem(82.7);
   }
 }
